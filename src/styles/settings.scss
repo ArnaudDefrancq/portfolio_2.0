@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-01: #ecf8f8;
+$color-02: #feeaa1;
+$color-03: #d6955b;
+$color-04: #226d68;
+$color-05: #18534f;
+
+@font-face {
+  font-family: "font-title";
+  src: url("../assets/font/Jost-Regular.ttf");
+}
+
+@font-face {
+  font-family: "font-01";
+  src: url("../assets/font/NotoSans-Regular.ttf");
+}
