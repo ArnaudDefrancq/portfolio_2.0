@@ -1,7 +1,12 @@
 import React from "react";
+import ErrorComponent from "../components/ErrorComponent";
 
 const ErrorPage = () => {
-  return <div>error</div>;
+  return (
+    <main>
+      <ErrorComponent />
+    </main>
+  );
 };
 
 export default ErrorPage;
