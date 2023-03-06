@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
+import ProjectPage from "./pages/ProjectPage";
 import Projet01 from "./pages/projets/Projet_01";
 import Projet02 from "./pages/projets/Projet_02";
 import Projet03 from "./pages/projets/Projet_03";
@@ -16,6 +17,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/project-page" element={<ProjectPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project-01" element={<Projet01 />} />
         <Route path="/project-02" element={<Projet02 />} />
