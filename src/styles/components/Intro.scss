@@ -1,0 +1,125 @@
+.intro {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+
+  & h1 {
+    font-size: 3em;
+    letter-spacing: 1.8px;
+  }
+
+  .title-name {
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 800px;
+      width: 800px;
+      background: $color-04;
+      border-radius: 50%;
+      z-index: -1;
+      left: 50%;
+      bottom: -1000px;
+      animation: bubble-01 26s ease infinite;
+    }
+  }
+
+  & h3 {
+    font-size: 2em;
+    margin-top: 2%;
+    font-weight: 100;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 350px;
+    width: 350px;
+    background: $color-02;
+    border-radius: 50%;
+    z-index: -1;
+    left: 10%;
+    bottom: -400px;
+    animation: bubble-02 35s ease infinite;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 500px;
+    width: 500px;
+    background-color: $color-03;
+    border-radius: 50%;
+    z-index: -1;
+    left: 70%;
+    bottom: 50px;
+    animation: bubble-03 26s ease infinite;
+  }
+}
+
+@keyframes bubble-01 {
+  0% {
+    bottom: -1000px;
+  }
+
+  25% {
+    bottom: -970px;
+  }
+
+  50% {
+    bottom: -1030px;
+  }
+
+  75% {
+    bottom: -970px;
+  }
+
+  100% {
+    bottom: -1000px;
+  }
+}
+@keyframes bubble-02 {
+  0% {
+    bottom: -400px;
+  }
+
+  25% {
+    bottom: -370px;
+  }
+
+  50% {
+    bottom: -530px;
+  }
+
+  75% {
+    bottom: -370px;
+  }
+
+  100% {
+    bottom: -400px;
+  }
+}
+@keyframes bubble-03 {
+  0% {
+    bottom: 50px;
+  }
+
+  25% {
+    bottom: 20px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  75% {
+    bottom: 20px;
+  }
+
+  100% {
+    bottom: 50px;
+  }
+}

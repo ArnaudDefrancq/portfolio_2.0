@@ -6,8 +6,8 @@
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: 2;
   transition: 0.3s ease-out;
+  background: white;
 }
 
 .cursor.hovered {
