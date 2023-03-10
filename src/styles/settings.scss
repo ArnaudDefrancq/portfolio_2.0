@@ -40,3 +40,15 @@ a:visited {
   color: black;
   list-style: none;
 }
+
+@mixin displayImgProject {
+  position: absolute;
+  right: 0;
+  top: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in;
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 15%;
+  opacity: 0;
+}

@@ -11,6 +11,9 @@ import Projet04 from "./pages/projets/Projet_04";
 import Projet05 from "./pages/projets/Projet_05";
 import Projet06 from "./pages/projets/Projet_06";
 import Projet07 from "./pages/projets/Projet_07";
+import Projet08 from "./pages/projets/Projet_08";
+import Projet09 from "./pages/projets/Projet_09";
+import Projet10 from "./pages/projets/Projet_10";
 
 const App = () => {
   return (
@@ -26,6 +29,9 @@ const App = () => {
         <Route path="/project-05" element={<Projet05 />} />
         <Route path="/project-06" element={<Projet06 />} />
         <Route path="/project-07" element={<Projet07 />} />
+        <Route path="/project-08" element={<Projet08 />} />
+        <Route path="/project-09" element={<Projet09 />} />
+        <Route path="/project-10" element={<Projet10 />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>

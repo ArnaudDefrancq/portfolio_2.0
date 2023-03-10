@@ -1,0 +1,87 @@
+.all-project-container {
+  display: flex;
+  margin-top: 80px;
+  height: 100%;
+}
+
+.project-left {
+  margin-right: 10%;
+  height: 100%;
+  width: 50%;
+}
+
+.project-right {
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+
+  & .all-project-list {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      visibility: hidden;
+    }
+
+    & .all-project-items {
+      font-size: 2em;
+      width: 50%;
+      margin: 30px 10%;
+      padding: 10px;
+      border-bottom: 2px solid $color-05;
+    }
+  }
+}
+
+.img-project-01 {
+  @include displayImgProject;
+  background: url(../../../public/images/bonneteau-img-miniature.png)
+    center/cover;
+}
+.img-project-02 {
+  @include displayImgProject;
+  background: url(../../../public/images/bulles-project-miniature.png)
+    center/cover;
+}
+.img-project-03 {
+  @include displayImgProject;
+  background: url(../../../public/images/generateur-project-miniature.png)
+    center/cover;
+}
+.img-project-04 {
+  @include displayImgProject;
+  background: url(../../../public/images/groupomania-project-miniature.png)
+    center/cover;
+}
+.img-project-05 {
+  @include displayImgProject;
+  background: url(../../../public/images/kanap-project-miniature.png)
+    center/cover;
+}
+.img-project-06 {
+  @include displayImgProject;
+  background: url(../../../public/images/memoire-miniature.png) center/cover;
+}
+.img-project-07 {
+  @include displayImgProject;
+  background: url(../../../public/images/ohmyfood-project-img-miniature.png)
+    center/cover;
+}
+.img-project-08 {
+  @include displayImgProject;
+  background: url(../../../public/images/quiz-pays-miniature.png) center/cover;
+}
+.img-project-09 {
+  @include displayImgProject;
+  background: url(../../../public/images/reservia-project-img-miniature.png)
+    center/cover;
+}
+
+.all-project-items:hover .img-projet {
+  opacity: 1;
+}
