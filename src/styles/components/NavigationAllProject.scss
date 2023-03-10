@@ -2,12 +2,19 @@
   display: flex;
   margin-top: 80px;
   height: 100%;
-}
+  position: relative;
 
-.project-left {
-  margin-right: 10%;
-  height: 100%;
-  width: 50%;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: $color-02;
+    top: -20%;
+    right: 5%;
+    animation: bubble-01-project 26s ease infinite;
+  }
 }
 
 .project-right {
@@ -15,6 +22,19 @@
   z-index: 2;
   overflow: hidden;
   position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 650px;
+    width: 650px;
+    border-radius: 50%;
+    background-color: $color-03;
+    top: 30%;
+    left: -10%;
+    z-index: -2;
+    animation: bubble-02-project 26s ease infinite;
+  }
 
   & .all-project-list {
     height: 70%;
@@ -84,4 +104,47 @@
 
 .all-project-items:hover .img-projet {
   opacity: 1;
+}
+
+@keyframes bubble-02-project {
+  0% {
+    top: 30%;
+  }
+
+  25% {
+    top: 33%;
+  }
+
+  50% {
+    top: 27%;
+  }
+
+  75% {
+    top: 30%;
+  }
+
+  100% {
+    top: 33%;
+  }
+}
+@keyframes bubble-01-project {
+  0% {
+    top: -23%;
+  }
+
+  25% {
+    top: -20%;
+  }
+
+  50% {
+    top: -17%;
+  }
+
+  75% {
+    top: -20%;
+  }
+
+  100% {
+    top: -23%;
+  }
 }
