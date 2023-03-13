@@ -60,46 +60,46 @@
 
 .img-project-01 {
   @include displayImgProject;
-  background: url(../../../public/images/bonneteau-img-miniature.png)
-    center/cover;
+  background: url(../../../public/images/projet-01.png);
 }
 .img-project-02 {
   @include displayImgProject;
-  background: url(../../../public/images/bulles-project-miniature.png)
-    center/cover;
+  background: url(../../../public/images/projet-02.png) center/cover;
 }
 .img-project-03 {
   @include displayImgProject;
-  background: url(../../../public/images/generateur-project-miniature.png)
-    center/cover;
+  background: url(../../../public/images/projet-03.png) center/cover;
 }
 .img-project-04 {
+  @include displayImgProject;
+  background: url(../../../public/images/projet-04.png) center/cover;
+}
+.img-project-05 {
   @include displayImgProject;
   background: url(../../../public/images/groupomania-project-miniature.png)
     center/cover;
 }
-.img-project-05 {
+.img-project-06 {
   @include displayImgProject;
   background: url(../../../public/images/kanap-project-miniature.png)
     center/cover;
 }
-.img-project-06 {
-  @include displayImgProject;
-  background: url(../../../public/images/memoire-miniature.png) center/cover;
-}
 .img-project-07 {
   @include displayImgProject;
-  background: url(../../../public/images/ohmyfood-project-img-miniature.png)
-    center/cover;
+  background: url(../../../public/images/projet-05.png) center/cover;
 }
 .img-project-08 {
   @include displayImgProject;
-  background: url(../../../public/images/quiz-pays-miniature.png) center/cover;
+  background: url(../../../public/images/projet-06.png);
+  background-position: center;
 }
 .img-project-09 {
   @include displayImgProject;
-  background: url(../../../public/images/reservia-project-img-miniature.png)
-    center/cover;
+  background: url(../../../public/images/projet-07.png) center/cover;
+}
+.img-project-10 {
+  @include displayImgProject;
+  background: url(../../../public/images/projet-08.png) center/cover;
 }
 
 .all-project-items:hover .img-projet {
